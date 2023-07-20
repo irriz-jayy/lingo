@@ -10,7 +10,8 @@ module.exports = {
       },
       colors: {
         main: "#4E211F",
-        button: "#914F3B",
+        button: "#020079", //deep blue
+        button2: "#0006b1", //hover blue
         text1: "#D58D57",
         text2: "#000000",
       },
