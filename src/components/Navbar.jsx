@@ -32,7 +32,7 @@ export default function Example() {
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <a
                     href="#"
-                    className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium font-heading text-gray-900"
+                    className="inline-flex items-center border-b-2 border-button px-1 pt-1 text-sm font-medium font-heading text-gray-900"
                   >
                     Home
                   </a>
@@ -54,7 +54,7 @@ export default function Example() {
                 <div className="flex-shrink-0">
                   <button
                     type="button"
-                    className="relative font-heading inline-flex items-center rounded-md border border-transparent  px-4 py-2 text-sm font-medium text-black shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    className="relative font-heading  inline-flex items-center rounded-md border border-transparent  px-4 py-2 text-sm font-medium text-black shadow-lg hover:text-white hover:bg-button2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   >
                     <span>Sign up</span>
                   </button>
@@ -62,7 +62,7 @@ export default function Example() {
                 <div className="flex-shrink-0 ml-4">
                   <button
                     type="button"
-                    className="relative font-heading inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    className="relative font-heading bg-button inline-flex items-center rounded-md border border-transparent  px-4 py-2 text-sm font-medium text-white shadow-lg hover:bg-button2  focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   >
                     <span>Sign in</span>
                   </button>
@@ -77,7 +77,7 @@ export default function Example() {
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block border-l-4  font-heading border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 sm:pl-5 sm:pr-6"
+                className="block border-l-4  font-heading border-button bg-button2 py-2 pl-3 pr-4 text-base font-medium text-white sm:pl-5 sm:pr-6"
               >
                 Home
               </Disclosure.Button>
