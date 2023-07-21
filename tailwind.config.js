@@ -9,7 +9,7 @@ module.exports = {
         logo: ["Pacifico"],
       },
       colors: {
-        main: "#4E211F",
+        main: "#020079",
         button: "#020079", //deep blue
         button2: "#0006b1", //hover blue
         text1: "#D58D57",

@@ -1,7 +1,30 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useLocation } from "react-router-dom";
 
 export default function Example() {
+  const location = useLocation();
+
+  const links = [
+    {
+      text: "Home",
+      path: "/",
+      className:
+        "inline-flex items-center border-b-2 border-button px-1 pt-1 text-sm font-medium font-heading text-gray-900",
+    },
+    {
+      text: "Courses",
+      path: "#",
+      className:
+        "inline-flex items-center border-b-2 border-button px-1 pt-1 text-sm font-medium font-heading text-gray-900",
+    },
+    {
+      text: "Contact",
+      path: "/contact",
+      className:
+        "inline-flex items-center border-b-2 border-button px-1 pt-1 text-sm font-medium font-heading text-gray-900",
+    },
+  ];
   return (
     <Disclosure as="nav" className="bg-white shadow">
       {({ open }) => (
@@ -30,24 +53,21 @@ export default function Example() {
                 </div>
                 <div className="hidden md:ml-6 md:flex md:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-button px-1 pt-1 text-sm font-medium font-heading text-gray-900"
-                  >
-                    Home
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium  font-heading text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                  >
-                    Courses
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium font-heading text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                  >
-                    About
-                  </a>
+                  {links.map((link, index) => (
+                    <a
+                      key={index}
+                      href={link.path}
+                      className={`inline-flex items-center border-b-2 ${
+                        location.pathname === link.path
+                          ? "border-indigo-500 text-gray-900"
+                          : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                      } px-1 pt-1 text-sm font-medium font-heading ${
+                        link.className
+                      }`}
+                    >
+                      {link.text}
+                    </a>
+                  ))}
                 </div>
               </div>
               <div className="flex items-center">
@@ -76,7 +96,7 @@ export default function Example() {
               {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <Disclosure.Button
                 as="a"
-                href="#"
+                href="/"
                 className="block border-l-4  font-heading border-button bg-button2 py-2 pl-3 pr-4 text-base font-medium text-white sm:pl-5 sm:pr-6"
               >
                 Home
@@ -90,10 +110,10 @@ export default function Example() {
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="#"
+                href="/contact"
                 className="block border-l-4 font-heading border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
               >
-                About
+                Contact
               </Disclosure.Button>
             </div>
           </Disclosure.Panel>
