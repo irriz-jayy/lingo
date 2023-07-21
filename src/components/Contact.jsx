@@ -5,9 +5,9 @@ function Contact() {
     <>
       <div className="flex h-[70vh] items-center justify-center flex-col sm:flex-col lg:flex-row">
         <div>
-          <p className="text-4xl font-heading p-2">
+          <p className="text-3xl font-heading p-2">
             Contact us to start your journey with{" "}
-            <span className="font-logo">lingo </span> today
+            <span className="font-logo text-main text-4xl">lingo </span> today
           </p>
           <p className="text-gray-500 font-paragraph">
             12 Terry Francine Drive San Fransisco, CA 12345

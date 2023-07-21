@@ -7,7 +7,7 @@ function Landingpage() {
       <div className="flex h-[90vh] flex-col sm:flex-col lg:flex-row">
         <div className="flex flex-col items-center justify-center w-full h-1/2  sm:w-full sm:h-1/2 lg:w-1/2 lg:h-full">
           <div className="font-paragraph text-4xl text-black p-2">
-            Welcome to <span className="font-logo">lingo</span>
+            Welcome to <span className="font-logo text-main">lingo</span>
           </div>
           <div className="font-paragraph text-lg text-gray-500 p-2">
             We offer a wide range of language courses taught by experienced and
