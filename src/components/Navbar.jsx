@@ -14,7 +14,7 @@ export default function Example() {
     },
     {
       text: "Courses",
-      path: "#",
+      path: "/courses",
       className:
         "inline-flex items-center border-b-2 border-button px-1 pt-1 text-sm font-medium font-heading text-gray-900",
     },
@@ -44,10 +44,10 @@ export default function Example() {
                   </Disclosure.Button>
                 </div>
                 <div className="flex flex-shrink-0 items-center">
-                  <p className="block  w-auto font-logo text-xl lg:hidden">
+                  <p className="block  w-auto font-logo text-main text-xl lg:hidden">
                     lingo
                   </p>
-                  <p className="hidden w-auto font-logo text-xl lg:block">
+                  <p className="hidden w-auto font-logo text-main text-xl lg:block">
                     lingo
                   </p>
                 </div>
