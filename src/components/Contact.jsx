@@ -18,9 +18,11 @@ function Contact() {
           </p>
         </div>
       </div>
-      <div className="flex h-[70vh] items-center justify-center border flex-col bg-main sm:flex-col lg:flex-col">
+      <div className="flex h-[70vh] items-center justify-center  flex-col bg-main sm:flex-col lg:flex-col">
         <div>
-          <p className="text-4xl pb-4 font-heading">Send us a message</p>
+          <p className="text-4xl text-white pb-4 font-heading">
+            Send us a message
+          </p>
         </div>
         <div>
           <form className="grid grid-cols-2 gap-4 font-paragraph">
