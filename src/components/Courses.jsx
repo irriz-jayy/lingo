@@ -53,7 +53,7 @@ function Courses() {
           get started
         </p>
       </div>
-      <div className="flex min-h-[100vh] items-center border flex-col sm:flex-col lg:flex-col">
+      <div className="flex min-h-[100vh] items-center  flex-col sm:flex-col lg:flex-col">
         {courses.map((course, index) => (
           <div className="flex w-9/12 min-h-80 flex-col my-4 sm:flex-col sm:w-9/12 md:flex-col lg:h-80 lg:w-9/12 lg:flex-row ">
             <img
